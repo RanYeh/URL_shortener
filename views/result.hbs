@@ -2,7 +2,7 @@
   {{#if url}}
     <h3>Success! Please use this link: </h3>
     <p class="mt-1">
-      <a href="{{ url }}">{{ url }}</a>  
+      <a href="{{ url }}" id="generated-short-url">{{ url }}</a>  
     </p>
   {{/if}}
 
@@ -14,8 +14,10 @@
     <a href="/" class="btn btn-secondary me-3">Back</a>
 
     {{#if url}}
-      <button class="btn btn-primary">Copy</button>
+      <button class="btn btn-primary" id="btn-copy">Copy</button>
     {{/if}}
   </div>
-  
+
 </div>
+
+<script src="/javascripts/copyurl.js"></script>
