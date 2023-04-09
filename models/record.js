@@ -6,7 +6,7 @@ const recordSchema = new Schema({
     type: String,
     required: true
   },
-  shortenUrl: {
+  shortUrl: {
     type: String,
     required: true
   }

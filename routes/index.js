@@ -5,6 +5,7 @@ const router = express.Router()
 const home = require('./modules/home')
 router.use('/', home)
 
-
+const shorturls = require('./modules/shorturls')
+router.use('/shorturls', shorturls)
 
 module.exports = router

@@ -1,9 +1,9 @@
-<form action="" method="POST">
+<form action="/shorturls" method="POST">
   <div class="mb-3 d-flex flex-column align-items-center">
-    <input type="text" class="form-control input-shorten-url" id="exampleInputEmail1" placeholder="https://myweb.com" required>
-    <div class="form-text">Input URL you want to shorten here.</div>
+    <input type="url" class="form-control input-shorten-url" id="originUrl" name="originUrl" placeholder="https://myweb.com" value="" required>
+    <div class="form-text">Enter URL you want to shorten here.</div>
   </div>
   <div class="d-flex justify-content-center">
-    <button type="submit" class="btn btn-primary btn-submit-shorten">Submit</button>
+    <button type="submit" class="btn btn-primary btn-submit-shorten">Shorten</button>
   </div>
 </form>

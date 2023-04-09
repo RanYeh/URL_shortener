@@ -1,11 +1,21 @@
 <div>
-  <h3>Success! Please use this link: </h3>
-  <p class="mt-1">
-    url
-  </p>
-  <div class="d-flex justify-content-center mt-2">
+  {{#if url}}
+    <h3>Success! Please use this link: </h3>
+    <p class="mt-1">
+      <a href="{{ url }}">{{ url }}</a>  
+    </p>
+  {{/if}}
+
+  {{#if errorMsg}}
+    <h3>{{ errorMsg }}</h3>
+  {{/if}}
+
+  <div class="d-flex justify-content-center mt-3">
     <a href="/" class="btn btn-secondary me-3">Back</a>
-    <button class="btn btn-primary">Copy</button>
+
+    {{#if url}}
+      <button class="btn btn-primary">Copy</button>
+    {{/if}}
   </div>
   
 </div>
