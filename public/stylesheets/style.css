@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.link-img {
+  margin-top: 10vh;
+  height: auto;
+  width: 15vw;
+}
+
+.input-shorten-url {
+  width: 30vw;
+}
+
+.btn-submit-shorten {
+  width: 30vw;
+}

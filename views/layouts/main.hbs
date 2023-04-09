@@ -5,17 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Url Shortener</title>
-  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/images/link_brand.png" class="ms-2 me-1" alt="url shortener" width="30" height="24">
+        <span class="navbar-brand mb-0 h1">Url Shortener</span>
+      </a>
+    </div>
+  </nav>
 
-  <!-- Partial templates -->
-  {{{ body }}}
+  <!-- Main -->
   
+  <div class="container d-flex flex-column align-items-center mt-5">
+      <img class="link-img" src="/images/link_brand.png" alt="url shortener">
+
+      <div class="mt-5">
+        {{{ body }}}
+      </div> 
+  </div>
+
   <!-- Import javascripts -->
   <script src="/javascripts/popper.js"></script>
   <script src="/javascripts/bootstrap.js"></script>
-  
 </body>
 </html>
